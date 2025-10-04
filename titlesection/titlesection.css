@@ -1,17 +1,32 @@
-h1 {
-	color: pink;
-}
-
-button:hover {
-	background-color: pink;
-	cursor: pointer;
-	font-size: 20px;
-
+:root {
+--titlesectionPrimaryColor: rgb(255, 141, 164);
+--titlesectionSecondaryColor: rgb(255,255,255);
 }
 
 #title {
+	color: var(--titlesectionPrimaryColor);
 	text-align: center;
 	padding-top: 200px;
 	background-image: url(../images/upscalemedia-transformed.jpeg);
 	background-position: center top;
 }
+
+ .title-section-button {
+      background: black;
+      color: pink;
+      border: 2px solid pink;
+      padding: 12px 24px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .title-section-button:hover {
+      background: pink;
+      color:var(--titlesectionSecondaryColor);
+      cursor: pointer;
+    }
+
+
+

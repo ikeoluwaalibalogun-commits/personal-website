@@ -1,47 +1,46 @@
 <html>
 <head>
-		<link rel="stylesheet" href="./titlesection/titlesection.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" >
+    <link rel="stylesheet" href="./titlesection/titlesection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet"> 
+
+    <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Gravitas One", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: pink;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-section {
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      text-align: center;
+    }
+
+    
+    </style>
+</head>
 <body>
-	<div class="main-section" id="title">
-	<h1>Welcome to Ikeoluwa's Web Page</h1>
-	<p>This is where dreams come true</p>
-	<button onclick="makeDreamComeTrue ()"> Make dream come true </button>
-	</div> 
+    <div class="main-section" id="title">
+        <h1>Welcome to Ikeoluwa's Web Page</h1>
+        <p>This is where dreams come true</p>
+        <button class="title-section-button" onclick="makeDreamComeTrue()">Make dream come true</button>
+    </div> 
+
+    <script>
+    function makeDreamComeTrue() {
+        document.body.style.background = 'url("https://i.pinimg.com/originals/a4/df/73/a4df732fe01accd3aaa531fd6eeb2dfd.gif")';
+        document.getElementById("title").style.visibility = "hidden";
+    }
+    </script>
 </body>
 </html>
-
-<style>
-
-* {
-  box-sizing: border-box;
-  font-family: "Bitcount Grid Double Ink", sans-serif;
-
-}
-
-html,body{
-	margin: 0px;
-	padding: 0px;
-}
-
-
-.main-section {
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-}
-
-
-</style>
-
-
-<script>
-	function makeDreamComeTrue() {
-	document.body.style.background = 'url("https://i.pinimg.com/originals/a4/df/73/a4df732fe01accd3aaa531fd6eeb2dfd.gif")';
-document.getElementById ("title").style.visibility = "hidden";
-
-}
-
-</script>
