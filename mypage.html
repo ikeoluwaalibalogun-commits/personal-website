@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="./titlesection/titlesection.css">
+    <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet"> 
@@ -27,6 +28,22 @@
       padding: 25px;
     }
 
+    .misc-secyion{
+      width: 100vw ;
+      padding: 100px 25px;
+    }
+
+    .text-block-container{
+      width: 65%;
+      margin: 0 auto;
+    }
+
+
+    @media screen and (max-width: 500px) {
+     .text-block-container {
+        width: 100%;
+    }
+}
     
     </style>
 </head>
@@ -36,6 +53,15 @@
         <p class="title-section-subtitle">Empowering innovation, beauty, and impact through tech, strategy, and storytelling</p>
         <button class="title-section-button" onclick="makeDreamComeTrue()"> Let's Build Magic Together!</button>
     </div> 
+    <div class="misc-section" id="about me">
+      <div class="text-block-container">
+        <h1>About Me</h1>
+        <p class="aboutme-section-description"> 
+          Hey there! I’m Ikeoluwa “Ms Mills” Ali-Balogun, a proud graduate of Information Science and Media Studies with a passion for merging technology, beauty, and lifestyle innovation. 
+          I like to say I live where strategy meets style — creating solutions that are as smart as they are stunning.
+        </p>
+      </div>
+    </div>
 
     <script>
     function makeDreamComeTrue() {
