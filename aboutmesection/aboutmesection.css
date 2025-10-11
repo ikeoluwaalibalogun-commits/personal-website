@@ -9,14 +9,27 @@
 .aboutme-icons {
     font-size: 25px;
     margin-top: 45px;
+      margin-bottom: 25px;
 }
 
 .aboutme-icon {
-    margin: 10px;
-    color: var(--titleSectionSecondaryColor);
+  margin: 10px;
+  font-size: 30px;
+  color: var(--titlesectionTertiaryColor); /* visible default color */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .aboutme-icon:hover {
-    cursor: pointer;
-    color: var(--titleSectionTertiaryColor);
+  cursor: pointer;
+  color: var(--titlesectionPrimaryColor); /* pink hover color */
+  transform: scale(1.1);
+}
+
+
+.aboutme-icons > a {
+    text-decoration: none;
+}
+
+.aboutme-download-link > a {
+    color: palevioletred;
 }
